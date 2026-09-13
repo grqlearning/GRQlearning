@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>GRQ Investment Learning — Learn to invest before you invest</title>
 <meta name="description" content="Plain-English courses on index funds, crypto, and high-growth investing. From $5 a month.">
-<link rel="icon" type="image/png" href="grq-icon.png">
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'><rect width='64' height='64' rx='12' fill='%23EEF3EA'/><rect x='13.6' y='34.9' width='36.8' height='12.2' fill='%23F4D84A'/><path d='M30.856 50.61600000000001Q26.384000000000004 50.61600000000001 23.186000000000003 48.38000000000001Q19.988000000000003 46.144000000000005 18.298000000000002 42.166000000000004Q16.608000000000004 38.188 16.608000000000004 32.98800000000001Q16.608000000000004 29.140000000000008 17.570000000000004 25.838000000000008Q18.532000000000004 22.536000000000005 20.560000000000002 20.066000000000003Q22.588000000000005 17.596000000000004 25.708000000000006 16.218000000000004Q28.828000000000003 14.840000000000003 33.144000000000005 14.840000000000003Q36.784000000000006 14.840000000000003 39.410000000000004 15.828000000000007Q42.036 16.81600000000001 43.7 18.58400000000001Q45.364000000000004 20.352000000000007 46.040000000000006 22.666000000000007Q46.716 24.980000000000008 46.456 27.632000000000005L38.604 28.568000000000005Q38.708 26.228000000000005 38.032 24.746000000000006Q37.356 23.264000000000006 36.03 22.53600000000001Q34.70400000000001 21.808000000000007 32.83200000000001 21.808000000000007Q30.596000000000004 21.808000000000007 28.932000000000002 23.004000000000005Q27.268000000000004 24.200000000000006 26.358000000000004 26.592000000000006Q25.448000000000004 28.984000000000005 25.448000000000004 32.572Q25.448000000000004 35.224000000000004 25.968000000000004 37.330000000000005Q26.488000000000003 39.43600000000001 27.528000000000006 40.86600000000001Q28.568000000000005 42.29600000000001 30.102000000000004 43.050000000000004Q31.636000000000003 43.804 33.612 43.804Q35.58800000000001 43.804 36.992000000000004 43.102000000000004Q38.396 42.400000000000006 39.150000000000006 41.178000000000004Q39.904 39.956 39.904 38.34400000000001H34.496V32.41600000000001H47.391999999999996V38.864000000000004V49.888000000000005H41.620000000000005V40.632000000000005H41.152Q40.892 43.85600000000001 39.61800000000001 46.092000000000006Q38.34400000000001 48.328 36.13400000000001 49.47200000000001Q33.92400000000001 50.61600000000001 30.856 50.61600000000001Z' fill='%2316301F'/></svg>">
 <link rel="apple-touch-icon" href="grq-icon.png">
 <meta property="og:title" content="GRQ Investment Learning">
 <meta property="og:description" content="Plain-English courses on index funds, crypto, and high-growth strategies. $5 a month for your first three months.">
@@ -51,6 +51,9 @@
   .nav a{color:var(--ink);text-decoration:none;font-size:1rem}
   .nav a:hover{text-decoration:underline;text-underline-offset:4px}
 
+  .nav a.ig{display:inline-flex;align-items:center;color:var(--ink)}
+  .nav a.ig svg{width:24px;height:24px;fill:none;stroke:currentColor;stroke-width:1.8}
+  .nav a.ig:hover{color:var(--pen)}
   .btn{display:inline-block;font-family:var(--display);font-weight:700;font-size:1.05rem;text-decoration:none;background:var(--pen);color:#fff;padding:14px 24px;border-radius:6px;border:2px solid var(--ink);box-shadow:0 4px 0 var(--ink);transition:transform .08s, box-shadow .08s;cursor:pointer}
   .btn:hover{background:var(--pen-dark)}
   .btn:active{transform:translateY(3px);box-shadow:0 1px 0 var(--ink)}
@@ -159,7 +162,8 @@
     body{font-size:17px}
     .wrap{padding:0 20px 0 44px}
     .sheet::before{left:28px}
-    .nav a:not(.btn){display:none}
+    .nav a:not(.btn):not(.ig){display:none}
+    .nav{gap:16px}
     section{padding:64px 0}
     .steps{grid-template-columns:1fr}
     .calc{padding:22px 18px 18px;box-shadow:5px 5px 0 var(--ink)}
@@ -180,6 +184,7 @@
       <a href="#courses">Courses</a>
       <a href="#pricing">Pricing</a>
       <a href="#faq">FAQ</a>
+      <a href="https://www.instagram.com/grqlearning/" target="_blank" rel="noopener" aria-label="GRQ on Instagram" class="ig"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="2.5" y="2.5" width="19" height="19" rx="5.5"/><circle cx="12" cy="12" r="4.6"/><circle cx="17.6" cy="6.4" r="1.3" fill="currentColor" stroke="none"/></svg></a>
       <a data-login href="#">Log in</a>
       <a class="btn small" data-plan="standard" href="#pricing">Start for $5</a>
     </nav>
@@ -347,7 +352,7 @@
   <div class="wrap">
     <div>
       <a class="logo" href="#"><b>GRQ</b><span>Investment Learning</span></a>
-      <div class="links"><a data-login href="#">Member log in</a><a data-portal href="#">Manage subscription</a><a href="#">Terms</a><a href="#">Privacy</a><a data-email href="#">Contact</a></div>
+      <div class="links"><a href="https://www.instagram.com/grqlearning/" target="_blank" rel="noopener">Instagram</a><a data-login href="#">Member log in</a><a data-portal href="#">Manage subscription</a><a href="#">Terms</a><a href="#">Privacy</a><a data-email href="#">Contact</a></div>
       <p style="margin-top:16px"><a data-email href="#" data-show-address>Email us</a></p>
       <p style="margin-top:4px">© 2026 GRQ Investment Learning</p>
     </div>
