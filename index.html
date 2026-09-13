@@ -370,11 +370,9 @@
     if (!MEMBER_LOGIN_URL.includes("REPLACE")) a.href = MEMBER_LOGIN_URL;
   });
 
-  /* ---- Stripe Payment Link for the Standard plan ----
-     Sandbox (test) link below. Before launch, replace it with your LIVE
-     payment link (starts with https://buy.stripe.com/ without "test_"). */
+  /* ---- Stripe Payment Link for the Standard plan (live) ---- */
   const CHECKOUT_LINKS = {
-    standard: "https://buy.stripe.com/test_bJe6oJ5DP4Wr0Z8aaG0Fi00"
+    standard: "https://buy.stripe.com/28E6oG0MkeyXbyl17m0kE01"
   };
   const INTRO_PROMO_CODE = "GRQINTRO";  // $10 off for 3 months = $5/month intro
   document.querySelectorAll("[data-plan]").forEach(a => {
